@@ -26,7 +26,7 @@
 		$plan = preg_replace('/\s+/', '', $plan);
 		$server = preg_replace('/\s+/', '', $server);
 		
-		$query = 'https://' . $server . ':2087/json-api/createacct?api.version=1&user=' . $user . '&domain=' . $domain . '&password=' . $password . '&contatemail=' . $email . '&plan=' . $plan . '&mxcheck=' . $mxcheck;
+		$query = 'https://' . $server . ':2087/json-api/createacct?api.version=1&user=' . $user . '&domain=' . $domain . '&password=' . $password . '&contactemail=' . $email . '&plan=' . $plan . '&mxcheck=' . $mxcheck;
 		
 		$curl = curl_init();       
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER,0);  
